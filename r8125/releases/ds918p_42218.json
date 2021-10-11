@@ -1,0 +1,28 @@
+{
+  "mod_version": "v1",
+
+  "files": [
+    {
+      "name": "r8125-4.4.180plus.tgz",
+      "url": "https://raw.githubusercontent.com/Jung1ePeng/rp-ext/master/r8125/releases/r8125-4.4.180plus.tgz",
+      "sha256": "a64d09cd7425818f0967e08561e2e3600e7c39428654854017d236465adcc68f",
+      "packed": true
+    },
+    {
+      "name": "check-r8125.sh",
+      "url": "https://raw.githubusercontent.com/Jung1ePeng/rp-ext/master/r8125/src/check-r8125.sh",
+      "sha256": "21e6998b7397187f84f98e093fd2d2cecc1be1cecf1c349d86a85ec8a8d350ac",
+      "packed": false
+    }
+
+  ],
+
+  "kmods": {
+    "r8125.ko": ""
+  },
+
+  "scripts": {
+    "on_boot": "check-r8125.sh"
+  }
+}
+
